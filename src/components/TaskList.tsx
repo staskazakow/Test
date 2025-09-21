@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { DeleteButton, TaskItem, TaskSucces, TaskText, WrapperTask } from "../Styled/Styled";
 export interface Task {
     id:number,

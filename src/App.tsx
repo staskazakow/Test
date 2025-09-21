@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import  { useState } from "react"
 import {  Heading } from "./Styled/Styled"
 import Input from "./components/Input"
 import TaskList, { type Task } from "./components/TaskList"
@@ -27,7 +27,7 @@ function App() {
     localStorage.setItem("tasks",JSON.stringify(FilterArray))
   }
   const SetSucces = (id:number) => {
-    const currentTask = taskArray.find(e => e.id == id)
+    const currentTask = taskArray.find((e:Task) => e.id == id)
     let FilterArray = taskArray.filter((e:Task) => e.id != id)
     const changeSuccesTask = {...currentTask,succes:true}
     let newArr = [...FilterArray,changeSuccesTask]

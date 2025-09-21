@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { ChangeTeme, InputToAdd, SendButton, WrapperInput } from '../Styled/Styled'
 import type { Task } from './TaskList'
 interface Props{
